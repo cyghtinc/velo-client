@@ -18,6 +18,10 @@ on client server: - install the new msi file:
 
 msiexec.exe /i velo_windows_amd64_agent_sonan.msi /qn
 
+or with logs
+
+msiexec.exe /i velo_windows_amd64_agent_sonan.msi /qn /l*v log.log
+
 
 creating new msi deploy file for windows clients:
 
