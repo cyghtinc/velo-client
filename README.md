@@ -6,6 +6,7 @@ download the agent:
 wget https://github.com/cyghtinc/velo-client/raw/refs/heads/main/velo_windows_amd64_agent_sonan-final.msi
 
 or 
+
 Invoke-WebRequest -Uri "https://github.com/cyghtinc/velo-client/raw/refs/heads/main/velo_windows_amd64_agent_sonan-final.msi" -UseBasicParsing
 
 
