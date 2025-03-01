@@ -36,6 +36,11 @@ or with logs
 msiexec.exe /i velo_windows_amd64_agent_sonan.msi /qn /l*v log.log
 
 
+
+
+
+
+
 creating new msi deploy file for windows clients:
 
 ./<velo-server-file-linux_x> --config repack --msi <velo_windows_x.msi> <client_config_yaml_file> <name_of_new_msi_for_specific_client.msi>
