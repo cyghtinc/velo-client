@@ -29,12 +29,12 @@ $webclient.DownloadFile("https://github.com/cyghtinc/velo-client/raw/refs/heads/
 
 on client server: - install the new msi file: (must give file full path of the msi)
 
-**msiexec.exe /i c:\users\velo_windows_amd64_agent_sonan.msi /qn
-**
+msiexec.exe /i c:\users\velo_windows_amd64_agent_sonan.msi /qn
+
 or with logs
 
-**msiexec.exe /i velo_windows_amd64_agent_sonan.msi /qn /l*v log.log
-**
+msiexec.exe /i velo_windows_amd64_agent_sonan.msi /qn /l*v log.log
+
 
 
 
