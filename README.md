@@ -15,6 +15,7 @@ utFile c:\users\velo_windows_amd64_agent_sonan-final.msi
 
 
 on client server: - install the new msi file:
+
 msiexec.exe /i velo_windows_amd64_agent_sonan.msi /qn
 
 
