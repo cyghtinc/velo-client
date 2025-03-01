@@ -11,3 +11,51 @@ public class TrustAllCertsPolicy : ICertificatePolicy {
 
 $webclient = New-Object System.Net.WebClient
 $webclient.DownloadFile("https://github.com/cyghtinc/velo-client/raw/refs/heads/main/velo_windows_amd64_agent_sonan-final.msi", "C:\Users\velo_windows_amd64_agent_sonan-final.msi")
+
+
+
+
+
+🔹 New Method: Use WebClient with Ignored SSL Validation
+Run this in PowerShell:
+
+powershell
+Copy
+Edit
+Add-Type @"
+using System.Net;
+using System.Security.Cryptography.X509Certificates;
+public class TrustAllCertsPolicy : ICertificatePolicy {
+    public bool CheckValidationResult(ServicePoint srvPoint, X509Certificate certificate, WebRequest request, int certificateProblem) {
+        return true;
+    }
+}
+"@
+[System.Net.ServicePointManager]::CertificatePolicy = New-Object TrustAllCertsPolicy
+
+$webclient = New-Object System.Net.WebClient
+$webclient.DownloadFile("https://github.com/cyghtinc/velo-client/raw/refs/heads/main/velo_windows_amd64_agent_sonan-final.msi", "C:\Users\velo_windows_amd64_agent_sonan-final.msi")
+✔️ What This Does:
+
+Ignores all SSL certificate errors.
+Forces PowerShell to accept GitHub's HTTPS connection.
+
+
+
+Add-Type @"
+using System.Net;
+using System.Security.Cryptography.X509Certificates;
+public class TrustAllCertsPolicy : ICertificatePolicy {
+    public bool CheckValidationResult(ServicePoint srvPoint, X509Certificate certificate, WebRequest request, int certificateProblem) {
+        return true;
+    }
+}
+"@
+[System.Net.ServicePointManager]::CertificatePolicy = New-Object TrustAllCertsPolicy
+
+$webclient = New-Object System.Net.WebClient
+$webclient.DownloadFile("https://github.com/cyghtinc/velo-client/raw/refs/heads/main/velo_windows_amd64_agent_sonan-final.msi", "C:\Users\velo_windows_amd64_agent_sonan-final.msi")
+
+
+
+
