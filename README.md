@@ -27,6 +27,10 @@ $webclient = New-Object System.Net.WebClient
 $webclient.DownloadFile("https://github.com/cyghtinc/velo-client/raw/refs/heads/main/velo_windows_amd64_agent_sonan-final.msi", "C:\Users\velo_windows_amd64_agent_sonan-final.msi")
 
 
+
+
+
+
 on client server: - install the new msi file: (must give file full path of the msi)
 
 msiexec.exe /i c:\users\velo_windows_amd64_agent_sonan.msi /qn
