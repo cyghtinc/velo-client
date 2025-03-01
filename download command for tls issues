@@ -57,5 +57,6 @@ $webclient = New-Object System.Net.WebClient
 $webclient.DownloadFile("https://github.com/cyghtinc/velo-client/raw/refs/heads/main/velo_windows_amd64_agent_sonan-final.msi", "C:\Users\velo_windows_amd64_agent_sonan-final.msi")
 
 
+https://chatgpt.com/c/67c1d8d4-0cd0-8002-8d01-bccfac1ab719
 
 
