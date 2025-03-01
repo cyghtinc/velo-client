@@ -9,6 +9,10 @@ or
 
 Invoke-WebRequest -Uri "https://github.com/cyghtinc/velo-client/raw/refs/heads/main/velo_windows_amd64_agent_sonan-final.msi" -UseBasicParsing
 
+Invoke-WebRequest -Uri "https://github.com/cyghtinc/velo-client/ra
+w/refs/heads/main/velo_windows_amd64_agent_sonan-final.msi" -UseBasicParsing -O
+utFile c:\users\velo_windows_amd64_agent_sonan-final.msi
+
 
 on client server: - install the new msi file:
 msiexec.exe /i velo_windows_amd64_agent_sonan.msi /qn
