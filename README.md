@@ -14,7 +14,8 @@ Invoke-WebRequest -Uri "https://github.com/cyghtinc/velo-client/raw/refs/heads/m
 if there is a problem with ssl/tls certificate
 use the following command
 
-Add-Type @"using System.Net;
+Add-Type @
+"using System.Net;
 using System.Security.Cryptography.X509Certificates;
 public class TrustAllCertsPolicy : ICertificatePolicy {
     public bool CheckValidationResult(ServicePoint srvPoint, X509Certificate certificate, WebRequest request, int certificateProblem) {
@@ -22,6 +23,8 @@ public class TrustAllCertsPolicy : ICertificatePolicy {
     }
 }"@
 [System.Net.ServicePointManager]::CertificatePolicy = New-Object TrustAllCertsPolicy
+
+
 
 $webclient = New-Object System.Net.WebClient
 $webclient.DownloadFile("https://github.com/cyghtinc/velo-client/raw/refs/heads/main/velo_windows_amd64_agent_sonan-final.msi", "C:\Users\velo_windows_amd64_agent_sonan-final.msi")
