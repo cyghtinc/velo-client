@@ -38,7 +38,9 @@ Once you have the configuration file, copy it to the respective client system. [
 
 To start the Velociraptor client in standalone mode using the client configuration file generated, run the command below
 
+```
  ./velociraptor --config client.config.yaml client -v
+```
 
 <img width="854" alt="VirtualBoxVM_GnOOc8U33p" src="https://github.com/user-attachments/assets/ff0946b0-fad0-4619-a506-c37bee395309" />
 
