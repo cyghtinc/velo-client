@@ -172,3 +172,56 @@ On the server GUI, navigate to homepage and select SHOW ALL next to the magnifyi
 <img width="960" alt="2lnfDV9gsx" src="https://github.com/user-attachments/assets/06eacc1b-8dbd-4c95-a838-c32e810279d1" />
 
 <img width="960" alt="KdcKBPXwen" src="https://github.com/user-attachments/assets/b00469d5-050c-49f5-8078-e4db5a493823" />
+
+
+-----------------------------------------------------------------------------
+> **_NOTE:_** If your installing the msi with `msiexec` like the next command:
+
+```
+msiexec.exe /i .\velociraptor-windows-amd64.msi /qn /l*v log.log
+
+```
+
+you shoud get a log file like the next log file:
+
+```
+=== Verbose logging started: 04/03/2025  13:45:54  Build type: SHIP UNICODE 5.00.10011.00  Calling process: C:\WINDOWS\system32\msiexec.exe ===
+MSI (c) (48:44) [13:45:54:820]: Resetting cached policy values
+MSI (c) (48:44) [13:45:54:820]: Machine policy value 'Debug' is 0
+MSI (c) (48:44) [13:45:54:820]: ******* RunEngine:
+           ******* Product: .\velociraptor-repack.msi
+           ******* Action: 
+           ******* CommandLine: **********
+MSI (c) (48:44) [13:45:54:822]: Client-side and UI is none or basic: Running entire install on the server.
+MSI (c) (48:44) [13:45:54:823]: Grabbed execution mutex.
+MSI (c) (48:44) [13:45:54:875]: Cloaking enabled.
+MSI (c) (48:44) [13:45:54:875]: Attempting to enable all disabled privileges before calling Install on Server
+MSI (c) (48:44) [13:45:54:880]: Incrementing counter to disable shutdown. Counter after increment: 0
+MSI (s) (48:88) [13:45:54:898]: Running installation inside multi-package transaction C:\Program Files\velociraptor\.\velociraptor-repack.msi
+MSI (s) (48:88) [13:45:54:898]: Grabbed execution mutex.
+MSI (s) (48:F4) [13:45:54:901]: Resetting cached policy values
+MSI (s) (48:F4) [13:45:54:902]: Machine policy value 'Debug' is 0
+MSI (s) (48:F4) [13:45:54:902]: ******* RunEngine:
+           ******* Product: C:\Program Files\velociraptor\.\velociraptor-repack.msi
+           ******* Action: 
+           ******* CommandLine: **********
+MSI (s) (48:F4) [13:45:54:903]: Machine policy value 'DisableUserInstalls' is 0
+MSI (s) (48:F4) [13:45:54:986]: Note: 1: 2203 2: C:\WINDOWS\Installer\inprogressinstallinfo.ipi 3: -2147287038 
+MSI (s) (48:F4) [13:45:54:988]: SRSetRestorePoint skipped for this transaction.
+MSI (s) (48:F4) [13:45:54:989]: Note: 1: 1402 2: HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer 3: 2 
+MSI (s) (48:F4) [13:45:54:989]: Note: 1: 1324 2: . 3: 1 
+MSI (s) (48:F4) [13:45:54:989]: MainEngineThread is returning 2
+MSI (s) (48:88) [13:45:54:990]: No System Restore sequence number for this installation.
+MSI (s) (48:88) [13:45:54:991]: User policy value 'DisableRollback' is 0
+MSI (s) (48:88) [13:45:54:991]: Machine policy value 'DisableRollback' is 0
+MSI (s) (48:88) [13:45:54:992]: Incrementing counter to disable shutdown. Counter after increment: 0
+MSI (s) (48:88) [13:45:54:992]: Note: 1: 1402 2: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Installer\Rollback\Scripts 3: 2 
+MSI (s) (48:88) [13:45:54:993]: Note: 1: 1402 2: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Installer\Rollback\Scripts 3: 2 
+MSI (s) (48:88) [13:45:54:993]: Decrementing counter to disable shutdown. If counter >= 0, shutdown will be denied.  Counter after decrement: -1
+MSI (c) (48:44) [13:45:54:995]: Decrementing counter to disable shutdown. If counter >= 0, shutdown will be denied.  Counter after decrement: -1
+MSI (c) (48:44) [13:45:54:997]: MainEngineThread is returning 2
+=== Verbose logging stopped: 04/03/2025  13:45:55 ===
+
+
+```
+---------------------------------------------------------
