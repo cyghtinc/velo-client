@@ -109,7 +109,7 @@ Create Velociraptor folder on target client system in the path specified below:
 mkdir "C:\Program Files\Velociraptor\"
 cd "C:\Program files\Velociraptor"
 ```
-**this path is important - because the MSI file that will be described below is configured [by velociraptor developers] to use this path!!!**
+**The specific path is for convenience and easy use of the tool, so that it is clear where the key is located - it is not mandatory!**
 
 - Step 2: Download Velociraptor Client Windows Installer
 Download the latest installer from [velociraptor releases](https://github.com/Velocidex/velociraptor/releases) page and save it in the folder created above.
@@ -138,7 +138,16 @@ Run the below command to embed the client’s configuration in the windows binar
 <img width="960" alt="WindowsTerminal_YY7qkNjVhL" src="https://github.com/user-attachments/assets/14a2c9d2-23b7-4b21-b526-0a4e7a943382" />
 
 
-[make sure that you running the command according your velociraptor version]
+[make sure that you running the command according your velociraptor version].
+
+If your server is running on linux and you need to repack the msi on the linux server you need to run the next command:
+
+```
+./velociraptor config repack --msi velociraptor-v0.74.0-rc1-windows-amd64.msi client.root.config.yaml velo_msi.msi
+```
+
+<img width="637" alt="VirtualBoxVM_glHiSGBZOP" src="https://github.com/user-attachments/assets/87cee7eb-8915-4d92-9979-defe0112ee8c" />
+
 
 - Step 5: Connect the client to the server
 
@@ -225,3 +234,8 @@ MSI (c) (48:44) [13:45:54:997]: MainEngineThread is returning 2
 
 ```
 ---------------------------------------------------------
+
+
+## Regarding changes between versions
+
+In our tests, we found that it is possible to set up communication on the client with a different Grassa than the one running on the server, but errors sometimes occur in the settings that need to be fixed - so it is better for the client and server to have the same version.
