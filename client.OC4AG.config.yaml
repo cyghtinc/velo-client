@@ -10,7 +10,7 @@ version:
 Client:
   server_urls:
   - https://34.118.75.59:80/
-  ca_certificate:
+  ca_certificate: |
 -----BEGIN CERTIFICATE-----
 MIIDVzCCAj+gAwIBAgIQBwx5Yx8w58NNdwr/TeMCrjANBgkqhkiG9w0BAQsFADAa
 MRgwFgYDVQQKEw9WZWxvY2lyYXB0b3IgQ0EwHhcNMjUwMjI3MTgxNDM2WhcNMjYw
