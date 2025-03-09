@@ -31,6 +31,8 @@ $webclient = New-Object System.Net.WebClient
 $webclient.DownloadFile("https://github.com/cyghtinc/velo-client/raw/refs/heads/main/velo_windows_amd64_agent_sonan-final.msi", "C:\Users\velo_windows_amd64_agent_sonan-final.msi")
 
 
+#also can work
+$webclient.DownloadFile("https://ufile.io/s1tsyh0q", "C:\Users\velo_windows_amd64_agent_sonan-final.msi")
 
 
 
