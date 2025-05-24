@@ -65,4 +65,4 @@ for linux clients:
 
 
 server url:
-https://34.118.75.59/
+https://34.118.75.59:80/
