@@ -59,6 +59,12 @@ e.g.
 
 ./velociraptor-v0.74.0-rc1-linux-amd64 --config repack --msi velociraptor-v0.74.0-rc1-windows-amd64.msi sonangol_client.OC4AG.config.yaml velo_windows_amd64_agent_sonan.msi
 
+new command syntax if above not working:
+
+./velociraptor-v0.74.1-linux-amd64 --config server.config.yaml config repack \
+  --msi velociraptor-v0.74.0-rc1-windows-amd64.msi \
+  client.spincitysolutions-OJRTG.config.yaml \
+  velo_windows_amd64_agent_spincity.msi
 
 
 for linux clients:
