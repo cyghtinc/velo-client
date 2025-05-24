@@ -239,3 +239,22 @@ MSI (c) (48:44) [13:45:54:997]: MainEngineThread is returning 2
 ## Regarding changes between versions
 
 In our tests, we found that it is possible to set up communication on the client with a different Grassa than the one running on the server, but errors sometimes occur in the settings that need to be fixed - so it is better for the client and server to have the same version.
+
+
+
+
+
+
+
+
+
+
+
+
+new msi generation command
+
+./velociraptor-v0.74.1-linux-amd64 --config server.config.yaml config repack \
+  --msi velociraptor-v0.74.0-rc1-windows-amd64.msi \
+  client.spincitysolutions-OJRTG.config.yaml \
+  velo_windows_amd64_agent_spincity.msi
+
