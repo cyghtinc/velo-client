@@ -72,3 +72,8 @@ for linux clients:
 
 server url:
 https://34.118.75.59:80/
+
+
+the config file for each client can be downloaded from velo GUI in the home page.
+under current orgs.
+<img width="1670" height="774" alt="image" src="https://github.com/user-attachments/assets/9dd8edff-e9bc-4370-8302-6aa366cda917" />
