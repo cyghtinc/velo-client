@@ -45,7 +45,8 @@ or with logs
 
 msiexec.exe /i velo_windows_amd64_agent_sonan.msi /qn /l*v log.log
 
-
+#sometimes the config file is incorrect, need to modify it and remove the ":80" from both server config file
+and also from client config file
 
 
 
